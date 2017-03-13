@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--<html ng-app>
+  <head>
+    <title>Angular js 1.5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src ='./js/angular.min.js'></script>
+    <style>
+      .new-class{
+       font-size: 50px;
+      }
+      .other-class{
+        font-size: 120px;
+      }
+    </style>
+  </head>
+  <body>
+  <h1 class="new-class"  ng-class="{'other-class':name=='Janhvi'}">Hello
+    <span ng-if='name'>{{name}}</span>
+    <span ng-if='!name'>World!</span>
+  </h1>
+    <input type = 'text' ng-model='name'>
+  </body>
+
+</html>-->
+
+<html ng-app="myApp">
+<head>
+<title>Angular js 1.5</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.2.5/ui-grid.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.2.5/ui-grid.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<div ng-controller="appController ">
+    <div ui-grid="gridOptions" ui-grid-edit ui-grid-row-edit ui-grid-cellNav class="mygrid" ></div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body> 
+
+
+</html>
